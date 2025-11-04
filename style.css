@@ -1,0 +1,87 @@
+/* Modern color scheme for Ayaanle Show */
+:root{
+  --primary:#ff6b6b;
+  --secondary:#4ecdc4;
+  --background:#f0f2f5;
+  --text:#222;
+  --link:#1a73e8;
+  --maxw:960px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0; color:var(--text); background:var(--background); line-height:1.5;
+}
+.container{
+  max-width:var(--maxw); margin:0 auto; padding:24px;
+}
+.site-header{
+  background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.06);
+}
+.site-header .container{
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo{
+  margin:0; font-size:1.25rem; color:var(--primary);
+}
+.nav a{
+  margin-left:16px; text-decoration:none; color:var(--text);
+}
+.nav a:hover{
+  color:var(--primary);
+}
+.hero{
+  padding:72px 24px; text-align:center;
+  background:linear-gradient(rgba(255,107,107,0.7), rgba(78,205,196,0.4)), url('../assets/hero.jpg') center/cover no-repeat;
+  color:#fff; border-radius:0 0 20px 20px;
+}
+.hero h2{
+  margin:0 0 12px; font-size:2rem;
+}
+.hero .contact-quick{
+  margin-top:12px; color:#fff;
+}
+.hero .social-links{
+  margin-top:10px;
+}
+.hero .social-links a{
+  color:#fff; text-decoration:none; margin:0 5px;
+}
+.card{
+  background:#fff; margin:18px 0; padding:18px;
+  border-radius:10px; box-shadow:0 6px 18px rgba(10,10,10,0.03);
+}
+.contact-quick{
+  margin-top:12px; color:var(--text);
+}
+ul{padding-left:20px;}
+.contact-form{
+  display:grid; gap:10px; margin-top:12px;
+}
+.contact-form input,
+.contact-form textarea{
+  padding:10px; border:1px solid #e2e8f0; border-radius:8px; width:100%;
+}
+.contact-form button{
+  padding:10px 14px; border:0; border-radius:8px; cursor:pointer;
+  background:var(--primary); color:#fff; font-weight:600;
+}
+.contact-form button:hover{
+  background:var(--secondary);
+}
+.site-footer{
+  padding:14px 0; text-align:center; color:var(--text); font-size:0.95rem;
+}
+.site-footer .social-links-footer a{
+  color:var(--link); text-decoration:none; margin:0 5px;
+}
+.site-footer .social-links-footer a:hover{
+  color:var(--primary);
+}
+
+/* Responsive adjustments */
+@media(min-width:800px){
+  .nav a{margin-left:22px}
+  .hero h2{font-size:2.5rem}
+  }
